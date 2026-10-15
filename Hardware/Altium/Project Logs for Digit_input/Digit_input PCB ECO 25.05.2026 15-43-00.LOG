@@ -1,0 +1,4 @@
+Added Component: Designator=TP1(Test_Point)
+Added Pin To Net: NetName=NetC3_2 Pin=TP1-1
+Added Member To Class: ClassName=Digit_input Member=Component TP1 TP
+Added Room: Name=Digit_input

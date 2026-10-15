@@ -1,0 +1,3 @@
+Change Component Footprint: Designator=TP5 Old Footprint=Test_Point_1mm New Footprint=Test_Point_2mm
+Added Member To Class: ClassName=Digit_input Member=Component TP1 TP
+Added Room: Name=Digit_input

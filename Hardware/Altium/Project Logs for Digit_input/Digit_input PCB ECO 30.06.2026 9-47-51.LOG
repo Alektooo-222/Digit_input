@@ -1,0 +1,9 @@
+Added Component: Designator=XS3(Degson_DG301-5.0-02P-1X)
+Added Pin To Net: NetName=Vref Pin=DA4-3
+Added Pin To Net: NetName=Vref Pin=DA4-4
+Added Pin To Net: NetName=OUT_ADC Pin=XS3-1
+Added Pin To Net: NetName=GND Pin=XS3-2
+Added Member To Class: ClassName=Digit_input Member=Component C11 100 íÔ
+Added Member To Class: ClassName=Digit_input Member=Component C12 100 íÔ
+Added Member To Class: ClassName=Digit_input Member=Component XS3 KF-301-2P
+Added Room: Name=Digit_input

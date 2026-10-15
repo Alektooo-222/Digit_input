@@ -1,0 +1,36 @@
+Change Component Designator: OldDesignator=TP1 NewDesignator=TP5
+Added Component: Designator=R18(Res_0603 3D)
+Added Component: Designator=TP1(Test_Point_1mm)
+Added Component: Designator=TP2(Test_Point_1mm)
+Added Component: Designator=TP3(Test_Point_1mm)
+Added Component: Designator=TP4(Test_Point_1mm)
+Added Component: Designator=TP6(Test_Point_1mm)
+Added Component: Designator=TP7(Test_Point_1mm)
+Added Component: Designator=TP8(Test_Point_1mm)
+Added Component: Designator=TP9(Test_Point_1mm)
+Added Component: Designator=TP10(Test_Point_1mm)
+Added Component: Designator=TP11(Test_Point_1mm)
+Added Pin To Net: NetName=GND Pin=R18-1
+Added Pin To Net: NetName=EN_PULL_UP Pin=R18-2
+Added Pin To Net: NetName=NetR4_2 Pin=TP1-1
+Added Pin To Net: NetName=4Â5 Pin=TP2-1
+Added Pin To Net: NetName=EN_PULL_UP Pin=TP3-1
+Added Pin To Net: NetName=INPUT+ Pin=TP4-1
+Added Pin To Net: NetName=OUT_COMP Pin=TP6-1
+Added Pin To Net: NetName=OUT Pin=TP7-1
+Added Pin To Net: NetName=Vref_comp Pin=TP8-1
+Added Pin To Net: NetName=INPUT- Pin=TP9-1
+Added Pin To Net: NetName=Vref Pin=TP10-1
+Added Pin To Net: NetName=OUT_ADC Pin=TP11-1
+Added Member To Class: ClassName=Digit_input Member=Component R18 10 êÎì
+Added Member To Class: ClassName=Digit_input Member=Component TP2 TP
+Added Member To Class: ClassName=Digit_input Member=Component TP3 TP
+Added Member To Class: ClassName=Digit_input Member=Component TP4 TP
+Added Member To Class: ClassName=Digit_input Member=Component TP5 TP
+Added Member To Class: ClassName=Digit_input Member=Component TP6 TP
+Added Member To Class: ClassName=Digit_input Member=Component TP7 TP
+Added Member To Class: ClassName=Digit_input Member=Component TP8 TP
+Added Member To Class: ClassName=Digit_input Member=Component TP9 TP
+Added Member To Class: ClassName=Digit_input Member=Component TP10 TP
+Added Member To Class: ClassName=Digit_input Member=Component TP11 TP
+Added Room: Name=Digit_input

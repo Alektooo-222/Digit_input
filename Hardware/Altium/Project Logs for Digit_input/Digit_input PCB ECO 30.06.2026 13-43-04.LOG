@@ -1,0 +1,3 @@
+Added Pin To Net: NetName=GND Pin=XS1-6
+Added Member To Class: ClassName=Digit_input Member=Component DD1 UCC27517
+Added Room: Name=Digit_input

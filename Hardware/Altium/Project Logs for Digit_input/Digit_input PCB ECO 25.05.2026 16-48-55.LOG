@@ -1,0 +1,12 @@
+Change Component Footprint: Designator=TP1 Old Footprint=Test_Point_1mm New Footprint=Test_Point_1_5mm
+Change Component Footprint: Designator=TP2 Old Footprint=Test_Point_1mm New Footprint=Test_Point_1_5mm
+Change Component Footprint: Designator=TP3 Old Footprint=Test_Point_1mm New Footprint=Test_Point_1_5mm
+Change Component Footprint: Designator=TP4 Old Footprint=Test_Point_1mm New Footprint=Test_Point_1_5mm
+Change Component Footprint: Designator=TP6 Old Footprint=Test_Point_1mm New Footprint=Test_Point_1_5mm
+Change Component Footprint: Designator=TP7 Old Footprint=Test_Point_1mm New Footprint=Test_Point_1_5mm
+Change Component Footprint: Designator=TP8 Old Footprint=Test_Point_1mm New Footprint=Test_Point_1_5mm
+Change Component Footprint: Designator=TP9 Old Footprint=Test_Point_1mm New Footprint=Test_Point_1_5mm
+Change Component Footprint: Designator=TP10 Old Footprint=Test_Point_1mm New Footprint=Test_Point_1_5mm
+Change Component Footprint: Designator=TP11 Old Footprint=Test_Point_1mm New Footprint=Test_Point_1_5mm
+Change Component Footprint: Designator=TP5 Old Footprint=Test_Point_2mm New Footprint=Test_Point_1_5mm
+Added Room: Name=Digit_input

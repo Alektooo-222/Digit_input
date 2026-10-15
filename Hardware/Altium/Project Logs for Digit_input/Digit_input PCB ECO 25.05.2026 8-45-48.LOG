@@ -1,0 +1,92 @@
+Change Component Comment : Designator=VD? Old Comment=Диод Шот  А1&К2 (2) New Comment=BAS70-04W
+Added Component: Designator=C?(CAP 0603 3D)
+Added Component: Designator=C?(CAP 0603 3D)
+Added Component: Designator=C?(CAP 0603 3D)
+Added Component: Designator=C?(CAP 0603 3D)
+Added Component: Designator=C?(CAP 0603 3D)
+Added Component: Designator=C?(CAP 0603 3D)
+Added Component: Designator=DA?(SOT-89 (123))
+Added Component: Designator=DA?(SOT-23-5)
+Added Component: Designator=DD?(SOT-23-5)
+Added Component: Designator=R?(Res_0603 3D)
+Added Component: Designator=R?(Res_2512 3D)
+Added Component: Designator=R?(Res_0603 3D)
+Added Component: Designator=R?(Res_0603 3D)
+Added Component: Designator=R?(Res_0603 3D)
+Added Component: Designator=R?(Res_0603 3D)
+Added Component: Designator=R?(Res_0603 3D)
+Added Component: Designator=R?(Res_0603 3D)
+Added Component: Designator=R?(Res_0603 3D)
+Added Component: Designator=R?(Res_0603 3D)
+Added Component: Designator=VD?(SOD-123f)
+Added Pin To Net: NetName=5В Pin=C?-1
+Added Pin To Net: NetName=5В Pin=C?-1
+Added Pin To Net: NetName=5В Pin=DA?-5
+Added Pin To Net: NetName=5В Pin=DD?-1
+Added Pin To Net: NetName=5В Pin=R?-2
+Added Pin To Net: NetName=5В Pin=R?-2
+Added Pin To Net: NetName=5В Pin=R?-2
+Added Pin To Net: NetName=5В Pin=VD?-3
+Added Net: Name=5В
+Added Pin To Net: NetName=EN_PULL_UP Pin=DD?-3
+Added Net: Name=EN_PULL_UP
+Added Pin To Net: NetName=GND Pin=C?-2
+Added Pin To Net: NetName=GND Pin=C?-2
+Added Pin To Net: NetName=GND Pin=C?-2
+Added Pin To Net: NetName=GND Pin=C?-2
+Added Pin To Net: NetName=GND Pin=C?-2
+Added Pin To Net: NetName=GND Pin=DA?-2
+Added Pin To Net: NetName=GND Pin=DD?-2
+Added Pin To Net: NetName=GND Pin=DD?-4
+Added Pin To Net: NetName=GND Pin=R?-1
+Added Pin To Net: NetName=GND Pin=R?-1
+Added Pin To Net: NetName=GND Pin=VD?-1
+Added Net: Name=GND
+Added Pin To Net: NetName=INPUT Pin=R?-1
+Added Pin To Net: NetName=INPUT Pin=R?-1
+Added Net: Name=INPUT
+Added Pin To Net: NetName=NetC?_1 Pin=C?-1
+Added Pin To Net: NetName=NetC?_1 Pin=DA?-3
+Added Pin To Net: NetName=NetC?_1 Pin=R?-1
+Added Pin To Net: NetName=NetC?_1 Pin=R?-1
+Added Pin To Net: NetName=NetC?_1 Pin=R?-2
+Added Net: Name=NetC?_1
+Add Net: Net with name "NetC?_1" already exists
+Added Pin To Net: NetName=NetDD?_5 Pin=DD?-5
+Added Pin To Net: NetName=NetDD?_5 Pin=VD?-2
+Added Net: Name=NetDD?_5
+Added Pin To Net: NetName=NetR?_2 Pin=R?-2
+Added Pin To Net: NetName=NetR?_2 Pin=VD?-1
+Added Net: Name=NetR?_2
+Added Pin To Net: NetName=OUT_COMP Pin=C?-1
+Added Pin To Net: NetName=OUT_COMP Pin=DA?-4
+Added Pin To Net: NetName=OUT_COMP Pin=R?-1
+Added Pin To Net: NetName=OUT_COMP Pin=R?-1
+Added Pin To Net: NetName=OUT_COMP Pin=R?-2
+Added Net: Name=OUT_COMP
+Added Pin To Net: NetName=OUT Pin=C?-1
+Added Pin To Net: NetName=OUT Pin=R?-2
+Added Pin To Net: NetName=OUT Pin=R?-2
+Added Net: Name=OUT
+Added Member To Class: ClassName=Digit_input Member=Component C? C
+Added Member To Class: ClassName=Digit_input Member=Component C? C
+Added Member To Class: ClassName=Digit_input Member=Component C? C
+Added Member To Class: ClassName=Digit_input Member=Component C? C
+Added Member To Class: ClassName=Digit_input Member=Component C? C
+Added Member To Class: ClassName=Digit_input Member=Component C? C
+Added Member To Class: ClassName=Digit_input Member=Component DA? TL431 (SOT-89)
+Added Member To Class: ClassName=Digit_input Member=Component DA? LMV331
+Added Member To Class: ClassName=Digit_input Member=Component DD? UCC27517
+Added Member To Class: ClassName=Digit_input Member=Component R? R
+Added Member To Class: ClassName=Digit_input Member=Component R? R
+Added Member To Class: ClassName=Digit_input Member=Component R? R
+Added Member To Class: ClassName=Digit_input Member=Component R? R
+Added Member To Class: ClassName=Digit_input Member=Component R? R
+Added Member To Class: ClassName=Digit_input Member=Component R? R
+Added Member To Class: ClassName=Digit_input Member=Component R? R
+Added Member To Class: ClassName=Digit_input Member=Component R? R
+Added Member To Class: ClassName=Digit_input Member=Component R? R
+Added Member To Class: ClassName=Digit_input Member=Component R? R
+Added Member To Class: ClassName=Digit_input Member=Component VD? BAS70-04W
+Added Rule: Name=Schematic Supply Nets
+Added Rule: Name=Schematic Supply Nets_1

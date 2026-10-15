@@ -1,0 +1,177 @@
+Added Component: Designator=C1(CAP 0603 3D)
+Added Component: Designator=C2(CAP 0603 3D)
+Added Component: Designator=C3(CAP 0603 3D)
+Added Component: Designator=C4(CAP 0603 3D)
+Added Component: Designator=C5(CAP 0603 3D)
+Added Component: Designator=C6(CAP 0603 3D)
+Added Component: Designator=C7(CAP 0603 3D)
+Added Component: Designator=C8(CAP 0603 3D)
+Added Component: Designator=C9(CAP 0603 3D)
+Added Component: Designator=C10(CAP 0603 3D)
+Added Component: Designator=C11(CAP 0603 3D)
+Added Component: Designator=C12(CAP 0603 3D)
+Added Component: Designator=DA1(SOT-23-3 (132))
+Added Component: Designator=DA2(SOT-23-5)
+Added Component: Designator=DA3(SOIC-8 150mil)
+Added Component: Designator=DD1(SOT-23-5)
+Added Component: Designator=R1(Res_0603 3D)
+Added Component: Designator=R2(Res_0603 3D)
+Added Component: Designator=R3(Res_0603 3D)
+Added Component: Designator=R4(Res_0603 3D)
+Added Component: Designator=R5(Res_0603 3D)
+Added Component: Designator=R6(Res_0603 3D)
+Added Component: Designator=R7(Res_0603 3D)
+Added Component: Designator=R8(Res_0603 3D)
+Added Component: Designator=R9(Res_0603 3D)
+Added Component: Designator=R10(Res_0603 3D)
+Added Component: Designator=R11(Res_0603 3D)
+Added Component: Designator=R12(Res_0603 3D)
+Added Component: Designator=R13(Res_2512 3D)
+Added Component: Designator=R14(Res_0603 3D)
+Added Component: Designator=R15(Res_0603 3D)
+Added Component: Designator=R16(Res_0603 3D)
+Added Component: Designator=R17(Res_0603 3D)
+Added Component: Designator=VD1(SOD-123f)
+Added Component: Designator=VD2(SOT-323)
+Added Component: Designator=XS1(Degson_DG301-5.0-06P-1X)
+Added Component: Designator=XS2(Degson_DG301-5.0-02P-1X)
+Added Pin To Net: NetName=5Â Pin=C1-1
+Added Pin To Net: NetName=GND Pin=C1-2
+Added Pin To Net: NetName=5Â Pin=C2-1
+Added Pin To Net: NetName=GND Pin=C2-2
+Added Pin To Net: NetName=OUT_COMP Pin=C3-1
+Added Pin To Net: NetName=5Â Pin=C4-1
+Added Pin To Net: NetName=GND Pin=C4-2
+Added Pin To Net: NetName=5Â Pin=C5-1
+Added Pin To Net: NetName=GND Pin=C5-2
+Added Pin To Net: NetName=GND Pin=C6-2
+Added Pin To Net: NetName=OUT Pin=C7-1
+Added Pin To Net: NetName=GND Pin=C7-2
+Added Pin To Net: NetName=GND Pin=C8-2
+Added Pin To Net: NetName=5Â Pin=C9-1
+Added Pin To Net: NetName=GND Pin=C9-2
+Added Pin To Net: NetName=5Â Pin=C10-1
+Added Pin To Net: NetName=GND Pin=C10-2
+Added Pin To Net: NetName=GND Pin=C11-2
+Added Pin To Net: NetName=GND Pin=C12-2
+Added Pin To Net: NetName=GND Pin=DA1-3
+Added Pin To Net: NetName=GND Pin=DA2-2
+Added Pin To Net: NetName=OUT_COMP Pin=DA2-4
+Added Pin To Net: NetName=5Â Pin=DA2-5
+Added Pin To Net: NetName=GND Pin=DA3-2
+Added Pin To Net: NetName=5Â Pin=DA3-6
+Added Pin To Net: NetName=5Â Pin=DD1-1
+Added Pin To Net: NetName=GND Pin=DD1-2
+Added Pin To Net: NetName=EN_PULL_UP Pin=DD1-3
+Added Pin To Net: NetName=GND Pin=DD1-4
+Added Pin To Net: NetName=5Â Pin=R1-1
+Added Pin To Net: NetName=GND Pin=R3-1
+Added Pin To Net: NetName=OUT_COMP Pin=R6-2
+Added Pin To Net: NetName=OUT_COMP Pin=R7-1
+Added Pin To Net: NetName=5Â Pin=R7-2
+Added Pin To Net: NetName=OUT_COMP Pin=R8-1
+Added Pin To Net: NetName=OUT Pin=R8-2
+Added Pin To Net: NetName=GND Pin=R9-1
+Added Pin To Net: NetName=OUT Pin=R9-2
+Added Pin To Net: NetName=5Â Pin=R10-2
+Added Pin To Net: NetName=5Â Pin=R11-2
+Added Pin To Net: NetName=GND Pin=R12-1
+Added Pin To Net: NetName=5Â Pin=R14-2
+Added Pin To Net: NetName=GND Pin=R15-1
+Added Pin To Net: NetName=GND Pin=R17-1
+Added Pin To Net: NetName=GND Pin=VD2-1
+Added Pin To Net: NetName=5Â Pin=XS1-1
+Added Pin To Net: NetName=GND Pin=XS1-2
+Added Pin To Net: NetName=EN_PULL_UP Pin=XS1-3
+Added Pin To Net: NetName=OUT Pin=XS2-1
+Added Pin To Net: NetName=GND Pin=XS2-2
+Added Pin To Net: NetName=INPUT+ Pin=DA3-8
+Added Pin To Net: NetName=INPUT+ Pin=R4-1
+Added Pin To Net: NetName=INPUT+ Pin=R5-1
+Added Pin To Net: NetName=INPUT+ Pin=R13-2
+Added Pin To Net: NetName=INPUT+ Pin=XS1-4
+Added Net: Name=INPUT+
+Added Pin To Net: NetName=INPUT- Pin=DA3-1
+Added Pin To Net: NetName=INPUT- Pin=R13-1
+Added Pin To Net: NetName=INPUT- Pin=XS1-5
+Added Net: Name=INPUT-
+Added Pin To Net: NetName=NetC3_2 Pin=C3-2
+Added Pin To Net: NetName=NetC3_2 Pin=C6-1
+Added Pin To Net: NetName=NetC3_2 Pin=DA2-1
+Added Pin To Net: NetName=NetC3_2 Pin=R5-2
+Added Pin To Net: NetName=NetC3_2 Pin=R6-1
+Added Pin To Net: NetName=NetC3_2 Pin=VD2-2
+Added Net: Name=NetC3_2
+Added Pin To Net: NetName=NetC8_1 Pin=C8-1
+Added Pin To Net: NetName=NetC8_1 Pin=DA2-3
+Added Pin To Net: NetName=NetC8_1 Pin=R10-1
+Added Pin To Net: NetName=NetC8_1 Pin=R11-1
+Added Pin To Net: NetName=NetC8_1 Pin=R12-2
+Added Net: Name=NetC8_1
+Added Pin To Net: NetName=NetDA1_1 Pin=DA1-1
+Added Pin To Net: NetName=NetDA1_1 Pin=R1-2
+Added Pin To Net: NetName=NetDA1_1 Pin=R2-2
+Added Pin To Net: NetName=NetDA1_1 Pin=VD2-3
+Added Net: Name=NetDA1_1
+Added Pin To Net: NetName=NetDA1_2 Pin=DA1-2
+Added Pin To Net: NetName=NetDA1_2 Pin=R2-1
+Added Pin To Net: NetName=NetDA1_2 Pin=R3-2
+Added Net: Name=NetDA1_2
+Added Pin To Net: NetName=NetDA3_5 Pin=DA3-5
+Added Pin To Net: NetName=NetDA3_5 Pin=R16-1
+Added Net: Name=NetDA3_5
+Added Pin To Net: NetName=NetDD1_5 Pin=DD1-5
+Added Pin To Net: NetName=NetDD1_5 Pin=VD1-2
+Added Net: Name=NetDD1_5
+Added Pin To Net: NetName=NetR4_2 Pin=R4-2
+Added Pin To Net: NetName=NetR4_2 Pin=VD1-1
+Added Net: Name=NetR4_2
+Added Pin To Net: NetName=OUT_ADC Pin=C12-1
+Added Pin To Net: NetName=OUT_ADC Pin=R16-2
+Added Pin To Net: NetName=OUT_ADC Pin=R17-2
+Added Pin To Net: NetName=OUT_ADC Pin=XS1-6
+Added Net: Name=OUT_ADC
+Added Pin To Net: NetName=Vref Pin=C11-1
+Added Pin To Net: NetName=Vref Pin=DA3-3
+Added Pin To Net: NetName=Vref Pin=DA3-7
+Added Pin To Net: NetName=Vref Pin=R14-1
+Added Pin To Net: NetName=Vref Pin=R15-2
+Added Net: Name=Vref
+Added Member To Class: ClassName=Digit_input Member=Component C1 100 íÔ
+Added Member To Class: ClassName=Digit_input Member=Component C2 100 íÔ
+Added Member To Class: ClassName=Digit_input Member=Component C3 100 ïÔ
+Added Member To Class: ClassName=Digit_input Member=Component C4 100 íÔ
+Added Member To Class: ClassName=Digit_input Member=Component C5 100 íÔ
+Added Member To Class: ClassName=Digit_input Member=Component C6 1 íÔ
+Added Member To Class: ClassName=Digit_input Member=Component C7 100 ïÔ
+Added Member To Class: ClassName=Digit_input Member=Component C8 100 íÔ
+Added Member To Class: ClassName=Digit_input Member=Component C9 100 íÔ
+Added Member To Class: ClassName=Digit_input Member=Component C10 100 íÔ
+Added Member To Class: ClassName=Digit_input Member=Component C11 100 íÔ
+Added Member To Class: ClassName=Digit_input Member=Component C12 1 íÔ
+Added Member To Class: ClassName=Digit_input Member=Component DA1 TL431
+Added Member To Class: ClassName=Digit_input Member=Component DA2 LMV331
+Added Member To Class: ClassName=Digit_input Member=Component DA3 AD8418
+Added Member To Class: ClassName=Digit_input Member=Component DD1 UCC27517
+Added Member To Class: ClassName=Digit_input Member=Component R1 50 Îì
+Added Member To Class: ClassName=Digit_input Member=Component R2 2.4 êÎì
+Added Member To Class: ClassName=Digit_input Member=Component R3 3 êÎì
+Added Member To Class: ClassName=Digit_input Member=Component R4 2 êÎì
+Added Member To Class: ClassName=Digit_input Member=Component R5 15 êÎì
+Added Member To Class: ClassName=Digit_input Member=Component R6 1 ÌÎì
+Added Member To Class: ClassName=Digit_input Member=Component R7 3 êÎì
+Added Member To Class: ClassName=Digit_input Member=Component R8 10 êÎì
+Added Member To Class: ClassName=Digit_input Member=Component R9 20 êÎì
+Added Member To Class: ClassName=Digit_input Member=Component R10 13 êÎì
+Added Member To Class: ClassName=Digit_input Member=Component R11 1 ÌÎì
+Added Member To Class: ClassName=Digit_input Member=Component R12 13 êÎì
+Added Member To Class: ClassName=Digit_input Member=Component R13 0.1 Îì
+Added Member To Class: ClassName=Digit_input Member=Component R14 1 êÎì
+Added Member To Class: ClassName=Digit_input Member=Component R15 1 êÎì
+Added Member To Class: ClassName=Digit_input Member=Component R16 2 êÎì
+Added Member To Class: ClassName=Digit_input Member=Component R17 3.83 êÎì
+Added Member To Class: ClassName=Digit_input Member=Component VD1 BAS70H
+Added Member To Class: ClassName=Digit_input Member=Component VD2 BAS70-04W
+Added Member To Class: ClassName=Digit_input Member=Component XS1 KF-301-6P
+Added Member To Class: ClassName=Digit_input Member=Component XS2 KF-301-2P
+Added Room: Name=Digit_input

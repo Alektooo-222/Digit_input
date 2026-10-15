@@ -1,0 +1,12 @@
+Change Component Comment : Designator=R2 Old Comment=2.4 êÎì New Comment=1 êÎì
+Change Component Comment : Designator=R1 Old Comment=50 Îì New Comment=100 Îì
+Added Component: Designator=C15(CAP 0603 3D)
+Added Component: Designator=C16(CAP 0603 3D)
+Added Pin To Net: NetName=5Â Pin=C15-1
+Added Pin To Net: NetName=GND Pin=C15-2
+Added Pin To Net: NetName=5Â Pin=C16-1
+Added Pin To Net: NetName=GND Pin=C16-2
+Added Member To Class: ClassName=Digit_input Member=Component C15 100 íÔ
+Added Member To Class: ClassName=Digit_input Member=Component C16 100 íÔ
+Added Member To Class: ClassName=Digit_input Member=Component DD1 UCC27517
+Added Room: Name=Digit_input
