@@ -38,57 +38,12 @@ extern "C"
 }
 
 #include "drivers.h"
-/* #include "arm_math.h"
-#include "arm_const_structs.h" */
-
-extern ADC_HandleTypeDef hadc1;
-extern DMA_HandleTypeDef hdma_adc1;
 
 TaskHandle_t MainHandle;
 static void MainTask(void *pvParameters);
 
-#define SIZE_BUF 1000U
-
-#define SIZE_BUF_CH1 100U
-#define SIZE_BUF_CH2 100U
-
-uint16_t data[SIZE_BUF] = {
-    0,
-};
-
-uint16_t data_tim8_ch1[SIZE_BUF_CH1] = {
-    0,
-};
-
-uint16_t data_tim8_ch2[SIZE_BUF_CH2] = {
-    0,
-};
-
-bool flag_half_cpl = false;
-bool flag_cpl = false;
-
-volatile static uint8_t test = 0;
-volatile static uint8_t *test_pointer = &test;
-
-#define TEST_LENGTH_SAMPLES 2048
 UBaseType_t watermark;
 UBaseType_t watermark_measure;
-/* -------------------------------------------------------------------
- * External Input and Output buffer Declarations for FFT Bin Example
- * ------------------------------------------------------------------- */
-/* extern float32_t testInput_f32_10khz[TEST_LENGTH_SAMPLES];
-static float32_t testOutput[TEST_LENGTH_SAMPLES / 2]; */
-
-/* ------------------------------------------------------------------
- * Global variables for FFT Bin Example
- * ------------------------------------------------------------------- */
-// uint32_t fftSize = 1024;
-// uint32_t ifftFlag = 0;
-// uint32_t doBitReverse = 1;
-// arm_cfft_instance_f32 varInstCfftF32;
-
-/* Reference index at which max energy of bin ocuurs */
-// uint32_t refIndex = 213, testIndex = 0;
 
 /* USER CODE END Includes */
 
@@ -122,55 +77,6 @@ void SystemClock_Config(void);
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
 
-// void HAL_ADC_ConvCpltCallback(ADC_HandleTypeDef *hadc)
-//{
-//   // обнуляем счётчик
-//
-//   volatile uint32_t count_tic = 0; // кол-во тактов
-//   if (hadc->Instance == ADC1)
-//   {
-//     /* DWT_CYCCNT = 0;
-//
-//     for (uint16_t i = SIZE_BUF / 2U; i < SIZE_BUF; i++)
-//     {
-//       LOGV(3, data[i]);
-//     }
-//
-//     count_tic = DWT_CYCCNT;
-//
-//     return; */
-//     flag_cpl = true;
-//   }
-// }
-
-// void HAL_ADC_ConvHalfCpltCallback(ADC_HandleTypeDef *hadc)
-//{
-//   volatile uint32_t count_tic = 0; // кол-во тактов
-//
-//   if (hadc->Instance == ADC1)
-//   {
-//     /* DWT_CYCCNT = 0;
-//
-//     for (uint16_t i = 0; i < SIZE_BUF / 2U; i++)
-//     {
-//       LOGV(3, data[i]);
-//     }
-//
-//     count_tic = DWT_CYCCNT;
-//
-//     return; */
-//     flag_half_cpl = true;
-//   }
-// }
-
-// void HAL_ADC_ErrorCallback(ADC_HandleTypeDef *hadc)
-//{
-//   if (hadc->Instance == ADC1)
-//   {
-//     return;
-//   }
-// }
-
 /* USER CODE END 0 */
 
 /**
@@ -201,100 +107,20 @@ int main(void)
   /* USER CODE END SysInit */
 
   /* Initialize all configured peripherals */
-  // MX_GPIO_Init();
-  // MX_DMA_Init();
-  // MX_ADC1_Init();
-  // MX_TIM1_Init();
-  // MX_TIM2_Init();
-  //MX_USB_DEVICE_Init();
-  // MX_TIM8_Init();
   MX_CAN_Init();
   /* USER CODE BEGIN 2 */
 
   swoInit(0xFFFFFFFF, SystemCoreClock, 2250000U); // SWO_STLINK_V2_MAX_SPEED); // All ITM ports, 72 MHz, 2.25 Mbps (max speed for ST-LINK V2, 8 us per byte)
-  // LOGI("Count\n");                                // %d", tick);  // LOGI is info level
 
-  /* LOGV(3, (int32_t)test_pointer);
-  LOGV(3, 3); */
-  volatile int16_t test_value = static_cast<uint16_t>(465U) - static_cast<uint16_t>(565U);
   Drivers::init();
   dwtInit();
-
-  /* arm_status status;
-  float32_t maxValue;
-
-  status = ARM_MATH_SUCCESS;
-
-  status = arm_cfft_init_1024_f32(&varInstCfftF32); */
 
   /* USER CODE END 2 */
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
-  //  if (HAL_ADCEx_Calibration_Start(&hadc1, ADC_SINGLE_ENDED) != HAL_OK)
-  //  {
-  //    /* Calibration Error */
-  //    Error_Handler();
-  //  }
 
-  //  if (HAL_ADC_Start_DMA(&hadc1, (uint32_t *)&data[0], SIZE_BUF) != HAL_OK)
-  //  {
-  //    /* Start Conversation Error */
-  //    Error_Handler();
-  //  }
-  //
-  //  if (HAL_TIM_Base_Start(&htim1) != HAL_OK)
-  //  {
-  //    /* Counter Enable Error */
-  //    Error_Handler();
-  //  }
-  //
-  //
-  //  if (HAL_TIM_PWM_Start(&htim1, TIM_CHANNEL_1) != HAL_OK)
-  //  {
-  //    /* Counter Enable Error */
-  //    Error_Handler();
-  //  }
-  // HAL_TIM_PWM_Start_DMA()
-  // HAL_TIM_Base_Start_DMA();
-  // HAL_TIM_IC_Start_DMA();
-
-  //  if (HAL_TIM_PWM_Start(&htim2, TIM_CHANNEL_1) != HAL_OK)
-  //  {
-  //    /* Counter Enable Error */
-  //    Error_Handler();
-  //  }
-
-  //  if (HAL_TIM_Base_Start(&htim8) != HAL_OK)
-  //  {
-  //    /* Counter Enable Error */
-  //    Error_Handler();
-  //  }
-
-  //  DWT_CYCCNT = 0;
-  //  if (HAL_TIM_IC_Start_DMA(&htim8, TIM_CHANNEL_1, (uint32_t *)data_tim8_ch1, SIZE_BUF_CH1) != HAL_OK)
-  //  {
-  //    /* Counter Enable Error */
-  //    Error_Handler();
-  //  }
-  //  count_tic = DWT_CYCCNT;
-  //  /* HAL_TIM_IC_Stop_DMA()
-  //  __HAL_TIM_CLEAR_FLAG(&htim8, TIM_FLAG_CC1); */
-  //
-  //  if (HAL_TIM_IC_Start_DMA(&htim8, TIM_CHANNEL_2, (uint32_t *)data_tim8_ch2, SIZE_BUF_CH2) != HAL_OK)
-  //  {
-  //    /* Counter Enable Error */
-  //    Error_Handler();
-  //  }
-
-  /* __HAL_TIM_DISABLE(&htim2);
-  __HAL_TIM_ENABLE_DMA(); */
-  //  TIM8->CR1 &= ~(1U);
-
-  // volatile uint32_t count_tic = 0;
-  // arm_biquad_cascade_df1_init_f32()
-
-  if (pdPASS != xTaskCreate(MainTask, "lpf_processTask", configMINIMAL_STACK_SIZE * 3U,
+  if (pdPASS != xTaskCreate(MainTask, "MainTask", configMINIMAL_STACK_SIZE * 3U,
                             NULL, tskIDLE_PRIORITY + 0, &MainHandle))
   {
     assert(false);
@@ -307,34 +133,6 @@ int main(void)
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
-    // кол-во тактов
-
-    if (flag_half_cpl == true)
-    {
-      DWT_CYCCNT = 0;
-
-      /* for (uint16_t i = 0; i < SIZE_BUF / 2U; i++)
-      {
-        LOGV(3, data[i]);
-      } */
-
-      // count_tic = DWT_CYCCNT;
-
-      flag_half_cpl = false;
-    }
-
-    if (flag_cpl == true)
-    {
-      DWT_CYCCNT = 0;
-
-      /* for (uint16_t i = SIZE_BUF / 2U; i < SIZE_BUF; i++)
-      {
-        LOGV(3, data[i]);
-      } */
-
-      // count_tic = DWT_CYCCNT;
-      flag_cpl = false;
-    }
   }
   /* USER CODE END 3 */
 }

@@ -132,64 +132,6 @@ void GET_PULSE(etl::string<MAX_SIZE_USB_CDC_MESSAGE> &cmd)
     return;
 }
 
-// enum class ParseResult
-//{
-//     Ok,
-//     InvalidCommand,
-//     InvalidArgument,
-//     WrongArgumentCount,
-//     Overflow
-// };
-//
-// ParseResult inline parse_set_voltage(
-//     etl::string_view message,
-//     SetVoltageCommand &command)
-//{
-//     // Ищем пробелы и выделяем 3 токенов:
-//     //
-//     // mid_point_mV
-//     // channel
-//
-//     static constexpr uint8_t number_of_tokens = 2U;
-//
-//     etl::string_view tokens[number_of_tokens];
-//
-//     size_t token_count = 0;
-//     size_t start = 0;
-//
-//     for (size_t i = 0; i <= message.size(); ++i)
-//     {
-//         if (i == message.size() || message[i] == ' ' || message[i] == '\n')
-//         {
-//             if (i > start)
-//             {
-//                 if (token_count >= number_of_tokens)
-//                     return ParseResult::WrongArgumentCount;
-//
-//                 tokens[token_count++] =
-//                     message.substr(start, i - start);
-//             }
-//
-//             start = i + 1;
-//         }
-//     }
-//
-//     if (token_count != number_of_tokens)
-//         return ParseResult::WrongArgumentCount;
-//
-//     // Проверяем имя команды
-//     if (tokens[0] != "set_voltage")
-//         return ParseResult::InvalidCommand;
-//
-//     if (!parse_uint32(tokens[1], command.mid_point_mV))
-//         return ParseResult::InvalidArgument;
-//
-//     if (!parse_uint32(tokens[2], command.channel))
-//         return ParseResult::InvalidArgument;
-//
-//     return ParseResult::Ok;
-// }
-
 void SET_CONFIG_MEASURE_PULSE(etl::string<MAX_SIZE_USB_CDC_MESSAGE> &cmd)
 {
     DI::config_measure_pulse();

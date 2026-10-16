@@ -510,11 +510,11 @@
 	[
 		{
 			"backtrace" : 2,
-			"id" : "freertos_kernel::@8d1fe2b5824bfeb7a79b"
+			"id" : "freertos_kernel_port::@3b750e658ec9e84f3050"
 		},
 		{
 			"backtrace" : 2,
-			"id" : "freertos_kernel_port::@3b750e658ec9e84f3050"
+			"id" : "freertos_kernel::@8d1fe2b5824bfeb7a79b"
 		},
 		{
 			"backtrace" : 4,
